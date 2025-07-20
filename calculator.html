@@ -1,0 +1,56 @@
+<html>
+
+<body style="display:flex;justify-content: center;padding-top:150px;">
+    <div
+        style="background-color:greenyellow; text-align:center;border: 5px solid black; border-radius: 3%;height:350px;width:300px;">
+        <h1 style="text-align: center;align-items: center; font: black;font-family: sans-serif;">CALCULATOR</h1>
+        <input style="font-size: large;" type="text" placeholder="Enter first number" id="num1"><br><br>
+        <input style="font-size: large;" type="text" placeholder="Enter second number" id="num2"><br><br>
+        <input style="font-size: x-large;background-color: black;" type="submit" value="➕" onclick="add()">
+        <input style="font-size: x-large;background-color: black;" type="submit" value="➖" onclick="subtract()">
+        <input style="font-size: x-large;background-color: black;" type="submit" value="✖️" onclick="multiply()">
+        <input style="font-size: x-large;background-color: black;" type="submit" value="➗" onclick="divide()"> <br><br>
+
+        <h2>Result: </h2>
+        <input style="font-size: large;"type="text" id="result">
+
+        <script>
+            function add() {
+                var n1 = document.getElementById('num1').value;
+                var n2 = document.getElementById('num2').value;
+                document.getElementById("result").value = parseInt(n1) + parseInt(n2);
+            }
+        </script>
+        <script>
+            function subtract() {
+                var n1 = document.getElementById('num1').value;
+                var n2 = document.getElementById('num2').value;
+                document.getElementById("result").value = parseInt(n1) - parseInt(n2);
+            }
+        </script>
+        <script>
+            function multiply() {
+                var n1 = document.getElementById('num1').value;
+                var n2 = document.getElementById('num2').value;
+                document.getElementById("result").value = parseInt(n1) * parseInt(n2);
+            }
+        </script>
+
+        <script>
+            function divide() {
+                var n1 = document.getElementById('num1').value;
+                var n2 = document.getElementById('num2').value;
+                document.getElementById("result").value = parseInt(n1) / parseInt(n2);
+            }
+        </script>
+
+    
+
+
+
+
+
+    </div>
+</body>
+
+</html>
